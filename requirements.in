@@ -1,0 +1,28 @@
+# SPDX-FileCopyrightText: David Fritzsche
+# SPDX-License-Identifier: CC0-1.0
+black==19.10b0
+bump2version
+check-manifest
+coverage[toml]
+flake8-black
+flake8-isort
+fsfe-reuse
+invoke
+mypy==0.770
+pip-tools
+pip>=19.3
+pytest-cov
+pytest-html
+pytest~=5.4.1
+setuptools>=43
+tox-pyenv
+tox>=3.14.3
+twine
+wheel
+
+# Linux requirements (via keyring)
+secretstorage
+jeepney
+
+# Windows requirements (via keyring)
+pywin32-ctypes
