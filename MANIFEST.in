@@ -1,0 +1,21 @@
+# SPDX-FileCopyrightText: David Fritzsche
+# SPDX-License-Identifier: CC0-1.0
+
+# Notes:
+# 1. Reference: https://docs.python.org/3/distutils/commandref.html
+# 2. Check consistency with check-manifest
+#    (https://github.com/mgedmin/check-manifest)
+# 3. The order of statements is important! General rule of thumb:
+#    Ignore first, then include
+# 4. `exclude *` confuses check-manifest on Windows, so we are forced
+#    to be much more explicit with the excludes
+
+exclude .bumpversion* .editorconfig .flake8 .isort.cfg
+exclude requirement*
+exclude mypy.ini pytest.ini tox.ini
+exclude tasks.py
+
+prune build
+prune tests
+
+recursive-include LICENSES *.txt
