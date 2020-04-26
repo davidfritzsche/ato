@@ -23,5 +23,9 @@ prune src/ato.egg-info
 prune tests
 prune tools
 
+graft src
+
+include .reuse/dep5
 
 recursive-include LICENSES *.txt
+recursive-include src LICENSE*
