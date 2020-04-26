@@ -15,6 +15,7 @@ exclude =
     downloads
     generated
     venv
+    src/ato/_vendor
 
 ignore =
     F811 # redefinition of unused '...' from line ...

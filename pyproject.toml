@@ -22,6 +22,7 @@ exclude = '''
   | /buck-out/
   | /build/
   | /dist/
+  | /_vendor/
 )
 '''
 
@@ -32,3 +33,23 @@ include = [
 ]
 data_file = 'build/coverage-data/coverage'
 parallel = true
+
+[tool.vendoring]
+destination = "src/ato/_vendor"
+requirements = "src/ato/_vendor/vendor.txt"
+namespace = "ato._vendor"
+protected-files = ["__init__.py", "README.rst", "vendor.txt"]
+#patches-dir = "tools/automation/vendoring/patches"
+patches-dir = "tools/automation/vendoring/patches"
+
+[tool.vendoring.transformations]
+substitute = []
+drop = []
+
+[tool.vendoring.typing-stubs]
+packaging = []
+toml = []
+
+[tool.vendoring.license.directories]
+
+[tool.vendoring.license.fallback-urls]

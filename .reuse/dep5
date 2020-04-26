@@ -1,0 +1,21 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: ato
+Upstream-Contact: David Fritzsche <david.fritsche@mvua.de>
+Source: https://github.com/davidfritzsche/ato
+
+Files: tools/automation/vendoring/patches/*
+Copyright: David Fritzsche
+License: CC0-1.0
+
+Files: src/ato/_vendor/packaging/*
+Copyright: Donald Stufft and individual contributors
+License: Apache-2.0 OR BSD-2-Clause
+
+Files: src/ato/_vendor/toml/*
+Copyright: 2013-2018 William Pearson
+Copyright: 2015-2016 Julien Enselme
+Copyright: 2016 Google Inc.
+Copyright: 2017 Samuel Vasko
+Copyright: 2017 Nate Prewitt
+Copyright: 2017 Jack Evans
+License: MIT
